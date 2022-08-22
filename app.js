@@ -34,7 +34,7 @@ app.engine('hbs', exphbs({extname: '.hbs'}));
 app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
-    let title = 'Zekais - TODO'
+    let title = 'TASKS TO DO'
     res.render('index', {
         title: title
     })
