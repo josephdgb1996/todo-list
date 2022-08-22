@@ -16,7 +16,7 @@ const cors = require('cors')
 
 connectMongoDb()
 
-// app.use(cors());
+app.use(cors());
 app.use(session({
       secret: 'secret',
       resave: true,
