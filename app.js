@@ -12,8 +12,11 @@ const PORT = process.env.PORT || settings.port
 const users = require('./router/users')
 const todos = require('./router/todo')
 
+
+
 connectMongoDb()
 
+app.use(cors());
 app.use(session({
       secret: 'secret',
       resave: true,
